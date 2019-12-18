@@ -1,5 +1,6 @@
 'use strict';
 
+// Handle Task Instances(create, delete, mark completed)
 class Task {
    constructor(task) {
       this.task =[];
@@ -22,8 +23,8 @@ class Task {
 class ChangeDom {
    initialise(){
       const form = document.createElement('form');
-      const input = document.createElement('input')
-      const ul = document.createElement('ul')
+      const input = document.createElement('input');
+      const ul = document.createElement('ul');
       input.id = "TaskInputId";
       form.id="TaskFormId";
       form.appendChild(input);

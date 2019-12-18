@@ -27,7 +27,7 @@ describe('Check if it the code works', function () {
         expect(task.getTasks().length).toBe(3);
     });
 
-    it('Check if it can mark test as completed', function () {
+    it('Check if it can mark task as completed', function () {
         task.addTask(task1);
         task.addTask(task2);
         task.addTask(task3);
@@ -51,12 +51,12 @@ describe('Check if it the code works', function () {
         input.id = "TaskInputId";
         form.id = "TaskFormId";
         form.appendChild(input);
-        expect(Dom.initialise().form).toEqual(form)
+        expect(Dom.initialise().form).toEqual(form);
         expect(Dom.initialise().ul).toEqual(ul)
     });
 
 
-    it('CHeck if it can create an item', function () {
+    it('CHeck if it can create an task', function () {
         const elem = Dom.showTask(task);
         const res = document.createElement('li');
         res.innerText = task.name;
